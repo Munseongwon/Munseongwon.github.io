@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Jobs - Job Scraper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        body {
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .nav {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .source-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.875rem;
+        }
+
+        .job-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .job-link:hover {
+            text-decoration: underline;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>🔍 Job Scraper</h1>
+        <p>Berlin Startup Jobs, We Work Remotely, Web3 Career에서 채용 공고를 스크래핑합니다</p>
+    </div>
+    <nav class="nav">
+        <a href="index.html" role="button">← 돌아가기</a>
+        <a href="python.html" role="button">🐍 Python</a>
+        <a href="javascript.html" role="button">⚡ JavaScript</a>
+        <a href="java.html" role="button">☕ Java</a>
+        <a href="javascript-jobs.csv" download role="button">💾 CSV로 내보내기</a>
+    </nav>
+    <main>
+        <h2>Javascript 채용 공고</h2>
+        <div class="stats">
+            <p>총 21개의 공고가 검색되었습니다.</p>
+            <p><small>마지막 업데이트: 2025-11-09 17:43:48</small></p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>출처</th>
+                    <th>직무</th>
+                    <th>회사</th>
+                    <th>설명</th>
+                    <th>링크</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Senior Fullstack Developer (Typescript / Javascript / Node.js)</td>
+                    <td>DATATRONiQ</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/senior-fullstack-developer-typescript-javascript-node-js-datatroniq/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Senior Go Backend Developer</td>
+                    <td>DATATRONiQ</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/senior-backend-developer-golang-m-f-d-datatroniq/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>E-Commerce Tech Specialist (m/w/d)</td>
+                    <td>VINOS</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/e-commerce-tech-specialist-m-w-d-wein-vinos-gmbh/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Full-stack engineer (TS, React, Node)</td>
+                    <td>Feather</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/full-stack-engineer-ts-react-node-feather/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>We Work Remotely</td>
+                    <td>Javascript Fullstack Engineer - Senior</td>
+                    <td>Lumenalta</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://weworkremotely.com/company/lumenalta" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>We Work Remotely</td>
+                    <td>Full Stack Javascript Developer (Shape Up + Small team)</td>
+                    <td>Inovo Studios</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://weworkremotely.com/company/inovo-studios" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>DevRel Engineer APAC Mandarin Speaking</td>
+                    <td>LI.FI</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/devrel-engineer-apac-mandarin-speaking-li-fi/140019"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Senior Software Engineer – Digital Assets Custody</td>
+                    <td>swissquote</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/senior-software-engineer-digital-assets-custody-swissquote/139990"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Sr. Full Stack Developer</td>
+                    <td>Stealth</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/sr-full-stack-developer-stealth/138129" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>QA Automation Engineer</td>
+                    <td>solflare</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/qa-automation-engineer-solflare/139958" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Senior Infrastructure Engineer Core Systems</td>
+                    <td>QuickNode</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/senior-infrastructure-engineer-core-systems-quicknode/139908"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Staff Blockchain Security Engineer</td>
+                    <td>Nifty Gateway Studio</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/staff-blockchain-security-engineer-niftygatewaystudio/139875"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Senior Web3 Software Engineer</td>
+                    <td>InfStones</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/senior-web3-software-engineer-infstones/139858"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Senior Blockchain Software Engineer</td>
+                    <td>InfStones</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/senior-blockchain-software-engineer-infstones/139857"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Senior Web3 Engineer</td>
+                    <td>InfStones</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/senior-web3-engineer-infstones/139853" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Senior FrontEnd Developer</td>
+                    <td>OpenTag</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/senior-frontend-developer-opentag/139852" target="_blank">보기</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>CMS Developer</td>
+                    <td>Bitgo</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/cms-developer-bitgo/133016" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Frontend Engineer E3</td>
+                    <td>Bitgo</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/frontend-engineer-e3-bitgo/139800" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Senior Blockchain Security Engineer</td>
+                    <td>Nifty Gateway Studio</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/senior-blockchain-security-engineer-niftygatewaystudio/139783"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>React Native Engineer NYC or LND x4</td>
+                    <td>MLabs</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/react-native-engineer-nyc-or-lnd-x4-mlabs/139771"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Full Stack Developer Front End Leaning</td>
+                    <td>Winnables</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/full-stack-developer-front-end-leaning-winnables/105877"
+                            target="_blank">보기</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>Made with Flask, BeautifulSoup, Playwright & Pico CSS</p>
+    </footer>
+
+    <div style="margin-top:20px;text-align:center">
+        <a href='javascript-jobs.csv' download>
+            📥 Download Javascript Jobs (CSV)
+        </a>
+    </div>
+
+</body>
+
+</html>

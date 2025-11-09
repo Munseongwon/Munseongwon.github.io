@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Scraper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        body {
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+
+        .keywords {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 3rem 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>🔍 Job Scraper</h1>
+            <p>3개 사이트에서 채용 공고를 스크랩합니다!</p>
+        </div>
+    </div>
+
+    <section>
+        <h2>스크랩 대상 사이트</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>🏢 Berlin Startup Jobs</h3>
+            </div>
+            <div class="feature">
+                <h3>🌍 We Work Remotely</h3>
+            </div>
+            <div class="feature">
+                <h3>🚀 Web3 Career</h3>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>채용 공고 보기</h2>
+        <p style="text-align: center; margin: 2rem;">원하는 키워드를 선택하세요!</p>
+        <div class="keywords">
+            <a href="python.html" role="button">🐍 Python</a>
+            <a href="javascript.html" role="button">⚡ JavaScript</a>
+            <a href="java.html" role="button">☕ Java</a>
+        </div>
+    </section>
+    <section>
+        <h2>기술 스택</h2>
+        <li><strong>Flask</strong>: Python 웹 프레임워크</li>
+        <li><strong>BeautifulSoup</strong>: HTML 파싱</li>
+        <li><strong>Pico CSS</strong>: 미니멀 CSS 프레임워크</li>
+        <li><strong>ThreadPoolExecutor</strong>: 병렬 스크래핑</li>
+    </section>
+
+    <footer>
+        <p>© 2025 Job Scraper | Built with Flask + PicoCSS</p>
+    </footer>
+</body>
+
+</html>

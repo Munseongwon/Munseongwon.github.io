@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>python Jobs - Job Scraper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        body {
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .nav {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .source-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.875rem;
+        }
+
+        .job-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .job-link:hover {
+            text-decoration: underline;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>🔍 Job Scraper</h1>
+        <p>Berlin Startup Jobs, We Work Remotely, Web3 Career에서 채용 공고를 스크래핑합니다</p>
+    </div>
+    <nav class="nav">
+        <a href="index.html" role="button">← 돌아가기</a>
+        <a href="python.html" role="button">🐍 Python</a>
+        <a href="javascript.html" role="button">⚡ JavaScript</a>
+        <a href="java.html" role="button">☕ Java</a>
+        <a href="python-jobs.csv" download role="button">💾 CSV로 내보내기</a>
+    </nav>
+    <main>
+        <h2>Python 채용 공고</h2>
+        <div class="stats">
+            <p>총 34개의 공고가 검색되었습니다.</p>
+            <p><small>마지막 업데이트: 2025-11-09 17:43:41</small></p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>출처</th>
+                    <th>직무</th>
+                    <th>회사</th>
+                    <th>설명</th>
+                    <th>링크</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Senior Fullstack Developer (Typescript / Javascript / Node.js)</td>
+                    <td>DATATRONiQ</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/senior-fullstack-developer-typescript-javascript-node-js-datatroniq/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Senior Data Scientist</td>
+                    <td>DATATRONiQ</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/senior-data-scientist-datatroniq/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Senior Go Backend Developer</td>
+                    <td>DATATRONiQ</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/senior-backend-developer-golang-m-f-d-datatroniq/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>IT Developer</td>
+                    <td>GreenAutarky</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/it-developer-greenautarky-gmbh/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Backend Engineer</td>
+                    <td>EquiMatch</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/backend-engineer-equimatch-gmbh/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Senior Software Engineer – Secure AI Infrastructure</td>
+                    <td>Edgeless Systems</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/senior-software-engineer-secure-ai-infrastructure-edgeless-systems/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Senior Product Engineer</td>
+                    <td>GAIA</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/senior-product-engineer-gaia-law/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Lead Engineer – AI &amp; Logistics</td>
+                    <td>NexDash</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/lead-engineer-ai-logistics-nexdash/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Backend/AI Engineer &amp; UI/UX Engineer</td>
+                    <td>Deep Film Inc.</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/backend-ai-engineer-ui-ux-engineer-deep-film-inc/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Founding Backend/Platform Engineer (Remote)</td>
+                    <td>MobileBoost</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/founding-backend-platform-engineer-remote-mobileboost/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Python/AI Senior engineers</td>
+                    <td>Intermezzo</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/python-ai-senior-engineers-intermezzo-inc/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>AI &amp; Automation Engineer (m/f/x)</td>
+                    <td>Tracks &amp; Fields</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/ai-automation-engineer-m-f-x-tracks-fields/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Berlin Startup Jobs</td>
+                    <td>Principal Software Engineer- Medical Imaging (m/f/d)</td>
+                    <td>DeepSpin</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://berlinstartupjobs.com/engineering/principal-software-engineer-medical-imaging-m-f-d-deepspin-gmbh/"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>We Work Remotely</td>
+                    <td>Senior Python Backend Engineer (m/f/x)</td>
+                    <td>Makersite</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://weworkremotely.com/company/makersite" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>We Work Remotely</td>
+                    <td>Backend Engineer- Python/Django</td>
+                    <td>Search Atlas</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://weworkremotely.com/company/search-atlas" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>We Work Remotely</td>
+                    <td>Senior Backend Developer (Python)</td>
+                    <td>Proxify AB</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://weworkremotely.com/company/proxify-ab" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>We Work Remotely</td>
+                    <td>Lead Backend Engineer (Python/Django)</td>
+                    <td>Search Atlas</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://weworkremotely.com/company/search-atlas" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>We Work Remotely</td>
+                    <td>Senior Software Engineer - Backend/Python - USA Only (100% Remote)</td>
+                    <td>Close</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://weworkremotely.com/company/close" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>We Work Remotely</td>
+                    <td>Senior Python Engineer</td>
+                    <td>Valory AG</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://weworkremotely.com/company/valory-ag" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Senior Software Engineer FullStack Django Android AI Fully Remote</td>
+                    <td>dorbeleitconsulting</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/senior-software-engineer-full-stack-django-android-ai-fully-remote-dorbeleitconsulting/139621"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>JrMid Python Developer Accounting Team</td>
+                    <td>B2c2</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/jr-mid-python-developer-accounting-team-b2c2/138510"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>ZIGChain Blockchain Engineer</td>
+                    <td>ZIGChain</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/zigchain-blockchain-engineer-zigchain/139083"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Quality Assurance QA Blockchain Developer ZIGCHAIN</td>
+                    <td>ZIGChain</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/quality-assurance-qa-blockchain-developer-for-zigchain-zigchain/139006"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Algorithmic Forex Crypto Trader</td>
+                    <td>Gravity Team</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/algorithmic-forex-crypto-trader-gravity-team/138507"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Python AI Engineer</td>
+                    <td>Sherlock</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/python-ai-engineer-sherlock/111330" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Python Engineer Blockchain team</td>
+                    <td>Wallet</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/python-engineer-blockchain-team-wallet/133737"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Senior Software Engineer Python Asset Pricing Hedging</td>
+                    <td>Bitpanda</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/senior-software-engineer-python-asset-pricing-hedging-bitpanda/101436"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Research Engineer — ML RL Agents</td>
+                    <td>Affine.io</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/research-engineer-ml-rl-agents-affine-io/124332"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Python Engineer Asset Pricing Hedging</td>
+                    <td>Bitpanda</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/python-engineer-asset-pricing-hedging-bitpanda/103283"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Backend Engineer</td>
+                    <td>Objective Labs</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/backend-engineer-objective-labs/119349" target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Senior QA Engineer Exploratory Python Trading Tech</td>
+                    <td>Binance</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/senior-qa-engineer-exploratory-python-trading-tech-binance/116412"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Senior Software Engineer OTC Desk Team</td>
+                    <td>Gravity Team</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/senior-software-engineer-otc-desk-team-gravity-team/112387"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Contract Senior Backend Developer Python</td>
+                    <td>Themotleyfool</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/contract-senior-backend-developer-python-themotleyfool/112026"
+                            target="_blank">보기</a></td>
+                </tr>
+
+                <tr>
+                    <td>Web3 Career</td>
+                    <td>Python Blockchain Developer</td>
+                    <td>Scion Staffing</td>
+                    <td>Click to view job details</td>
+                    <td><a href="https://web3.career/python-blockchain-developer-scionstaffing/111268"
+                            target="_blank">보기</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>Made with Flask, BeautifulSoup, Playwright & Pico CSS</p>
+    </footer>
+
+    <div style="margin-top:20px;text-align:center">
+        <a href='python-jobs.csv' download>
+            📥 Download Python Jobs (CSV)
+        </a>
+    </div>
+
+</body>
+
+</html>
